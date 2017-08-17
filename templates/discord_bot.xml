@@ -1,29 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <TemplateURL>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/TEMPLATENAME.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/sasjafor/docker-templates/master/templates/discord_bot.xml</TemplateURL>
   <Beta>False</Beta>
   <Category></Category>
-  <!-- Date in format YYYY-MM-DD  -->
-  <Date></Date>
-  <Changes>
-  [center][img width='300px' src='https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_small.png'][/center]
-
+  <Date>2017-08-16</Date>
+  <Changes>[center][img width='300px' src='https://raw.githubusercontent.com/sasjafor/docker-templates/master/templates/img/discord_bot.png'][/center]
+  
   [center][font size=4] Change Log[/font][/center]
   </Changes>
-<!-- name preferably in lowercase  -->
-  <Name>test</Name>
+  <Name>discord_bot</Name>
   <Support></Support>
   <Description> [br]
   [br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
   [b]/config[/b] : Mapping for config files [br]
   </Description>
-<!-- link to the apps homepage or git page  -->
- <Project></Project>
-<!-- DON'T use any "&" in the overview section  -->
+  <Project></Project>
   <Overview></Overview>
-<!-- dockerhub link  -->
-  <Registry>test/test</Registry>
-  <Repository>test/test</Repository>
+  <Registry>https://hub.docker.com/r/sasjafor/discord_bot-docker/</Registry>
+  <Repository>sasjafor/discord_bot-docker</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Network Default="bridge">bridge</Network>
