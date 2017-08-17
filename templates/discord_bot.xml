@@ -29,5 +29,5 @@ Type="Variable" Display="always" Required="true" Mask="false">100</Config>
 
 
 <WebUI>http://[IP]:[PORT:80]/</WebUI>
-  <Icon></Icon>
+  <Icon>https://raw.githubusercontent.com/sasjafor/docker-templates/master/templates/img/discord_bot.png</Icon>
 </Container>
