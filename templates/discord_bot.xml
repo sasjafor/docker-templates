@@ -27,7 +27,7 @@ Type="Variable" Display="always" Required="true" Mask="false">99</Config>
   <Config Name="Group ID" Target="PGID" Default="100" Mode="" Description="Set to Desired Group ID"
 Type="Variable" Display="always" Required="true" Mask="false">100</Config>
   
-  <Config Name="Auth Key" Target="DISCORD_APP_AUTH_TOKEN" Default="" Mode="" Description="Set to the auth token from your discord app"
+  <Config Name="Variable: DISCORD_APP_AUTH_TOKEN" Target="DISCORD_APP_AUTH_TOKEN" Default="" Mode="" Description="Set to the auth token from your discord app"
 Type="Variable" Display="always" Required="true" Mask="false"></Config>
 
 
