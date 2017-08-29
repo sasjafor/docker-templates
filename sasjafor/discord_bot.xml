@@ -12,7 +12,7 @@
   <Support></Support>
   <Description> [br]
   [br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
-  [b]/usr/src/app[/b] : Mapping for bot files [br]
+  [b]/config[/b] : Mapping for bot files [br]
   </Description>
   <Project></Project>
   <Overview></Overview>
