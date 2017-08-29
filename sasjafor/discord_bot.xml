@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <TemplateURL>https://raw.githubusercontent.com/sasjafor/docker-templates/master/templates/discord_bot.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/sasjafor/docker-templates/master/sasjafor/discord_bot.xml</TemplateURL>
   <Beta>False</Beta>
   <Category></Category>
   <Date>2017-08-16</Date>
@@ -42,5 +42,5 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Icon>https://raw.githubusercontent.com/sasjafor/docker-templates/master/templates/img/discord_bot.png</Icon>
+  <Icon>https://raw.githubusercontent.com/sasjafor/docker-templates/master/sasjafor/img/discord_bot.png</Icon>
 </Container>
