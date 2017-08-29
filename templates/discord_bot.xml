@@ -42,6 +42,5 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <Icon>https://raw.githubusercontent.com/sasjafor/docker-templates/master/templates/img/discord_bot.png</Icon>
 </Container>
