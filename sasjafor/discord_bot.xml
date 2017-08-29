@@ -11,7 +11,8 @@
   <Name>discord_bot</Name>
   <Support></Support>
   <Description> [br]
-  [br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br][br]
+  [br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+  [b]/config[/b] : Mapping for config files [br]
   </Description>
   <Project></Project>
   <Overview></Overview>
@@ -34,5 +35,12 @@
       <Value></Value>
     </Variable>
   </Environment>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/usr/src/app</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
   <Icon>https://raw.githubusercontent.com/sasjafor/docker-templates/master/templates/img/discord_bot.png</Icon>
 </Container>
