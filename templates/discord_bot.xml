@@ -21,16 +21,27 @@
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Network Default="bridge">bridge</Network>
-  <Config Name="User ID" Target="PUID" Default="99" Mode="" Description="Set to Desired User ID"
-Type="Variable" Display="always" Required="true" Mask="false">99</Config>
-
-  <Config Name="Group ID" Target="PGID" Default="100" Mode="" Description="Set to Desired Group ID"
-Type="Variable" Display="always" Required="true" Mask="false">100</Config>
-  
-  <Config Name="Variable: DISCORD_APP_AUTH_TOKEN" Target="DISCORD_APP_AUTH_TOKEN" Default="" Mode="" Description="Set to the auth token from your discord app"
-Type="Variable" Display="always" Required="true" Mask="false"></Config>
-
-
-<WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <Environment>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+    <Variable>
+      <Name>DISCORD_APP_AUTH_TOKEN</Name>
+      <Value></Value>
+    <Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/usr/src/app</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <Icon>https://raw.githubusercontent.com/sasjafor/docker-templates/master/templates/img/discord_bot.png</Icon>
 </Container>
