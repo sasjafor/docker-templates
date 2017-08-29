@@ -33,7 +33,7 @@
     <Variable>
       <Name>DISCORD_APP_AUTH_TOKEN</Name>
       <Value></Value>
-    <Variable>
+    </Variable>
   </Environment>
   <Data>
     <Volume>
