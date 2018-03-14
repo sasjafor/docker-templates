@@ -16,7 +16,7 @@
   </Description>
   <Project></Project>
   <Registry>https://hub.docker.com/r/sasjafor/pgsql-docker/</Registry>
-  <Repository>sasjafor/pgsql</Repository>
+  <Repository>sasjafor/pgsql-docker</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
