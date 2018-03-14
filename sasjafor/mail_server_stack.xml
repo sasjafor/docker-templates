@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <TemplateURL>https://raw.githubusercontent.com/sasjafor/docker-templates/master/sasjafor/mail_server_stack.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category></Category>
+  <Date>2017-11-30</Date>
+  <Changes>[center][img width='300px' src='https://raw.githubusercontent.com/sasjafor/docker-templates/master/templates/img/mail_server_stack.png'][/center]
+  
+  [center][font size=4] Change Log[/font][/center]
+  </Changes>
+  <Name>mail</Name>
+  <Support></Support>
+  <Description> [br]
+  [br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+  [b]/config[/b] : Mapping for server relevant files
+		You need to put certificates in these locations:
+			cert = /config/ssl/ssl-cert-${SERVER_HOSTNAME}.pem
+			key = /config/ssl/ssl-cert-${SERVER_HOSTNAME}.key
+  [b]/var/mail/vmail[/b] : Mapping for email folder [br]
+  </Description>
+  <Project></Project>
+  <Registry>https://hub.docker.com/r/sasjafor/mail_server_stack-docker/</Registry>
+  <Repository>sasjafor/mail_server_stack-docker</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+    <Variable>
+      <Name>SERVER_HOSTNAME</Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>host</Mode>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+	<Volume>
+	  <HostDir></HostDir>
+	  <ContainerDir>/var/mail/vmail</ContainerDir>
+	  <Mode>rw</Mode>
+	</Volume>
+  </Data>
+  <Icon>https://raw.githubusercontent.com/sasjafor/docker-templates/master/templates/img/mail_server_stack.png</Icon>
+  <BaseImage>ubuntu</BaseImage>
+</Container>
