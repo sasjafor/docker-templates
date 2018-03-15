@@ -55,6 +55,11 @@
   </Environment>
   <Networking>
     <Mode>host</Mode>
+      <Port>
+        <HostPort>5432</HostPort>
+        <ContainerPort>5432</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
   </Networking>
   <Data>
     <Volume>
