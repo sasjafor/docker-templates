@@ -15,7 +15,7 @@
   [b]/config[/b] : Mapping for server relevant files
 		You need to put certificates in these locations:
 			cert = /config/ssl/ssl-cert-${SERVER_HOSTNAME}.pem
-			key = /config/ssl/ssl-cert-${SERVER_HOSTNAME}.key
+			key = /config/ssl/ssl-key-${SERVER_HOSTNAME}.key
   [b]/var/mail/vmail[/b] : Mapping for email folder [br]
   </Description>
   <Project></Project>
@@ -39,6 +39,28 @@
   </Environment>
   <Networking>
     <Mode>host</Mode>
+    <Publish>
+      <Port>
+        <HostPort>993</HostPort>
+        <ContainerPort>993</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>587</HostPort>
+        <ContainerPort>587</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>465</HostPort>
+        <ContainerPort>465</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>25</HostPort>
+        <ContainerPort>25</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
   </Networking>
   <Data>
     <Volume>
@@ -53,5 +75,5 @@
 	</Volume>
   </Data>
   <Icon>https://raw.githubusercontent.com/sasjafor/docker-templates/master/templates/img/mail_server_stack.png</Icon>
-  <BaseImage>ubuntu</BaseImage>
+  <BaseImage>ubuntu:bionic</BaseImage>
 </Container>
