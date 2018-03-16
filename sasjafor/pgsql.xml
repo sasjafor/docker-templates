@@ -4,7 +4,7 @@
   <Beta>False</Beta>
   <Category></Category>
   <Date>2017-11-30</Date>
-  <Changes>[center][img width='300px' src='https://raw.githubusercontent.com/sasjafor/docker-templates/master/templates/img/pgsql.png'][/center]
+  <Changes>[center][img width='300px' src='https://raw.githubusercontent.com/sasjafor/docker-templates/master/sasjafor/img/pgsql.png'][/center]
   
   [center][font size=4] Change Log[/font][/center]
   </Changes>
@@ -63,6 +63,6 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Icon>https://raw.githubusercontent.com/sasjafor/docker-templates/master/templates/img/pgsql.png</Icon>
+  <Icon>https://raw.githubusercontent.com/sasjafor/docker-templates/master/sasjafor/img/pgsql.png</Icon>
   <BaseImage>postgres</BaseImage>
 </Container>
