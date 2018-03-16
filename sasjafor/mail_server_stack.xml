@@ -4,7 +4,7 @@
   <Beta>False</Beta>
   <Category></Category>
   <Date>2017-11-30</Date>
-  <Changes>[center][img width='300px' src='https://raw.githubusercontent.com/sasjafor/docker-templates/master/templates/img/mail_server_stack.png'][/center]
+  <Changes>[center][img width='300px' src='https://raw.githubusercontent.com/sasjafor/docker-templates/master/sasjafor/img/mail_server_stack.png'][/center]
   
   [center][font size=4] Change Log[/font][/center]
   </Changes>
@@ -56,6 +56,6 @@
 	  <Mode>rw</Mode>
 	</Volume>
   </Data>
-  <Icon>https://raw.githubusercontent.com/sasjafor/docker-templates/master/templates/img/mail_server_stack.png</Icon>
+  <Icon>https://raw.githubusercontent.com/sasjafor/docker-templates/master/sasjafor/img/mail_server_stack.png</Icon>
   <BaseImage>ubuntu:bionic</BaseImage>
 </Container>
