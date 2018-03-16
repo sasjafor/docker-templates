@@ -36,31 +36,13 @@
       <Name>SERVER_HOSTNAME</Name>
       <Value></Value>
     </Variable>
+    <Variable>
+      <Name>POSTGRES_PASSWORD</Name>
+      <Value></Value>
+    </Variable>
   </Environment>
   <Networking>
     <Mode>host</Mode>
-    <Publish>
-      <Port>
-        <HostPort>993</HostPort>
-        <ContainerPort>993</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>587</HostPort>
-        <ContainerPort>587</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>465</HostPort>
-        <ContainerPort>465</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>25</HostPort>
-        <ContainerPort>25</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
   </Networking>
   <Data>
     <Volume>
