@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <TemplateURL>https://raw.githubusercontent.com/sasjafor/docker-templates/master/sasjafor/ark_server.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category></Category>
+  <Date>2018-04-16</Date>
+  <Changes>[center][img width='300px' src='https://raw.githubusercontent.com/sasjafor/docker-templates/master/templates/img/ark_server.png'][/center]
+  
+  [center][font size=4] Change Log[/font][/center]
+  </Changes>
+  <Name>Ark Server</Name>
+  <Support></Support>
+  <Description> [br]
+  [br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+  [b]/ark[/b] : Mapping for ark server files [br]
+  More details at https://github.com/TuRz4m/Ark-docker
+  </Description>
+  <Project></Project>
+  <Overview></Overview>
+  <Registry>https://hub.docker.com/r/turzam/ark/</Registry>
+  <Repository>turzam/ark</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Network Default="bridge">bridge</Network>
+  <Environment>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+    <Variable>
+      <Name>SESSIONNAME</Name>
+      <Value>Ark Docker</Value>
+    </Variable>
+    <Variable>
+      <Name>SERVERMAP</Name>
+      <Value>TheIsland</Value>
+    </Variable>
+    <Variable>
+      <Name>SERVERPASSWORD</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>ADMINPASSWORD</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>BACKUPONSTART</Name>
+      <Value>1</Value>
+    </Variable>
+    <Variable>
+      <Name>UPDATEONSTART</Name>
+      <Value>1</Value>
+    </Variable>
+    <Variable>
+      <Name>BACKUPONSTOP</Name>
+      <Value>0</Value>
+    </Variable>
+    <Variable>
+      <Name>WARNONSTOP</Name>
+      <Value>1</Value>
+    </Variable>
+    <Variable>
+      <Name>TZ</Name>
+      <Value>Europe/Zurich</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/ark</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Icon>https://raw.githubusercontent.com/sasjafor/docker-templates/master/sasjafor/img/ark_server.png</Icon>
+</Container>
