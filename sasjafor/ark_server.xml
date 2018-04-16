@@ -17,8 +17,8 @@
   </Description>
   <Project></Project>
   <Overview></Overview>
-  <Registry>https://hub.docker.com/r/turzam/ark/</Registry>
-  <Repository>turzam/ark</Repository>
+  <Registry>https://hub.docker.com/r/sasjafor/ark_server-docker/</Registry>
+  <Repository>sasjafor/ark_server-docker</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Network Default="bridge">bridge</Network>
