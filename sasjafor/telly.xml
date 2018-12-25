@@ -36,6 +36,11 @@ An IPTV Proxy for Plex Live TV &amp;amp; DVR</Description>
       <ContainerDir>/tmp</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/telly</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <Environment>
     <Variable>
